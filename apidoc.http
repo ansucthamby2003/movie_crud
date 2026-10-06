@@ -1,0 +1,40 @@
+#list
+###
+GET http://127.0.0.1:8000/movie/
+Accept: application/json
+
+#create
+###
+POST http://127.0.0.1:8000/movie/
+Content-Type: application/json
+
+{
+    "name": "Drishyam",
+    "language": "Malayalam",
+    "duration": "164",
+    "director": "Jeethu Joseph",
+    "release_date": "2013-12-19"
+}
+
+#retrieve by id
+###
+GET http://127.0.0.1:8000/movie/1/
+Accept: application/json
+
+#update
+###
+PUT http://127.0.0.1:8000/movie/1/
+Accept: : application/json
+
+{
+    "name":"Avengers:Endgame",
+    "language":"English",
+    "duration":"181",
+    "director":"Russo Brothers",
+    "release_date":"2019-04-26"
+}
+
+#delete
+###
+DELETE http://127.0.0.1:8000/movie/6/
+Accept: application/json
